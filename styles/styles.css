@@ -1,0 +1,168 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Staatliches&display=swap');
+
+body {
+  /* radial-gradient(circle 600px at 10% 10%, rgba(255, 223, 160, 0.4) 10%, rgba(34, 34, 0,0) 60%), */
+  background: rgba(34, 34, 33,1);
+
+  color: white;
+}
+
+.spacer {
+  height: 100px;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 8px;
+  /* background: #000; */
+}
+
+main > div .media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 400px) {
+    main > div .media {
+    grid-template-columns: 1fr;
+    }
+}
+
+main h1 {
+  text-align: center;
+  font-family: "Staatliches", Helvetica;
+  font-size: 60px;
+}
+
+header {
+  display: flex;
+  padding: 12px;
+  width: 100vw;
+  background: #00000011;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid #b85949;
+  box-shadow: 0px -50px 100px 0px rgba(255,130,46,0.9);
+}
+
+footer {
+  width: 100vw;
+  background: #00000011;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: #b85949; /* Tomato color */
+  text-decoration-thickness: 4px;
+  text-decoration-style: solid;
+  color: white;
+  font-weight: bold;
+}
+
+/* a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
+  } */
+
+footer > div {
+  font-size: 20px;
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+@media (max-width: 400px) {
+  footer > div {
+    justify-content: space-evenly;
+  }
+}
+
+.logo svg {
+  height: 150px;
+  width: 300px;
+}
+
+@media (max-width: 400px) {
+  .logo svg {
+    height: 75px;
+    width: 150px;
+  }
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s cubic-bezier(1, 0.67, 0.33, 0.97) forwards;
+  stroke-width: 2.2px;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.poloroid {
+  background-color: rgb(246, 246, 246);
+  width: 400px;
+  margin: 50px;
+/* 
+  box-shadow: 3px 5px 7px 2px rgba(0, 0, 0, 0.2); */
+
+box-shadow: 0px 0px 170px 0px rgba(255,130,46,0.9);
+background: radial-gradient(circle, rgba(240,240,240,1) 61%, rgba(255, 244, 237, 0.9) 100%);
+}
+
+.poloroid img {
+  padding: 20px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.poloroid video {
+    padding: 20px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+
+.poloroid .text {
+display: block;
+  padding: 20px;
+  height: 80px;
+  padding-top: 0;
+  font-family: "Permanent Marker";
+
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.poloroid a {
+    text-decoration: none;
+}
+
+.poloroid a:hover{
+    text-decoration: underline;
+    text-decoration-color: #b85949; /* Tomato color */
+    text-decoration-thickness: 4px;
+    text-decoration-style: solid;
+}
