@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(()=>{
-    const divs = document.querySelectorAll('.poloroid');
+    const divs = document.querySelectorAll('.poloroid, .film');
     let delay = 0;
     
     divs.forEach((div, index) => {
@@ -12,3 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     },600)
   });
+
+
+//   background-image: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff);
