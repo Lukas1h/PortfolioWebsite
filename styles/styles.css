@@ -8,9 +8,7 @@ body {
   color: white;
 }
 
-.spacer {
-  height: 100px;
-}
+
 
 main {
   max-width: 1000px;
@@ -99,6 +97,53 @@ footer > div {
 .logo svg {
   height: 150px;
   width: 300px;
+}
+
+.spacer {
+  height: 100px;
+  flex: 1;
+}
+.socials  {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  
+}
+.socials a {
+  transition: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+.socials a:hover {
+  scale: 1.1;
+}
+
+.socials svg {
+  fill:rgb(229, 229, 229);
+  height: 50px;
+  filter: drop-shadow(2px 5px 15px rgba(255,130,46,1));
+}
+
+.vr {
+  height: 60px;
+  width: 4px;
+  background-color: #b85949;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 100px;
+}
+
+@media (max-width: 400px) {
+  .socials svg {
+  height: 25px;
+  }
+
+  .vr {
+    height: 35px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -192,14 +237,15 @@ display: block;
 
 .poloroid a {
     text-decoration: none;
+    pointer-events: none;
 }
 
-.poloroid a:hover{
+/* .poloroid a:hover{
     text-decoration: underline;
-    text-decoration-color: #b85949; /* Tomato color */
+    text-decoration-color: #b85949;
     text-decoration-thickness: 4px;
     text-decoration-style: solid;
-}
+} */
 
 @media (max-width:400px){
   .poloroid {
