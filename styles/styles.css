@@ -45,11 +45,15 @@ main h1 {
   background: rgba(34, 34, 33,1);
   box-shadow: 0px 0px 100px 0px rgba(255,130,46,0.9);
 
+
+
+
   border-radius: 8px;
   padding: 20px;
   font-size: 18px;
   color: rgb(229, 222, 215);
 }
+
 
 .about .content h4{ 
   font-size: 25px;
