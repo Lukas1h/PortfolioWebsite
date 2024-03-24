@@ -54,6 +54,27 @@ main h1 {
   color: rgb(229, 222, 215);
 }
 
+.verse {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.verse .ref {
+  font-weight: 700;
+}
+
+.verse .text {
+  font-style: italic;
+}
+
+@media (max-width:400){
+  .verse {
+    font-size: 12px;
+  }
+}
 
 .about .content h4{ 
   font-size: 25px;
