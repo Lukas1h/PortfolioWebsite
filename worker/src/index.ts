@@ -49,9 +49,7 @@ app.get("/", async (c) => {
     const listItems = contents
       .map((item) => {
         if (item.type === "file") {
-          return `<a href="${`https://github.com/${getUniqueRepo(
-            env(c).REPO
-          )}/blob/main/${item.path}?raw=true`}">${item.name}</a>`;
+          return `<a href="${`/${item.path}`}">${item.name}</a>`;
         } else if (item.type === "dir") {
           return `<a href="${`/${item.path}/`}">${item.name}/</a>`;
         }
